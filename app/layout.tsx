@@ -16,8 +16,36 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Roselle - Blooming Your World With Love',
-  description: 'Roselle is where love, beauty, and nature meet—crafted to bring elegance into your everyday world.',
-  keywords: 'luxury, floral, lifestyle, elegance, beauty, nature, love',
+  description: 'Discover Roselle, where love, beauty, and nature meet. Premium floral designs, wedding decor, and personalized mirror art crafted to bring elegance into your everyday world.',
+  keywords: 'luxury floral design, wedding decor, personalized mirrors, premium lifestyle, elegant home decor, floral arrangements, romantic design, luxury brand, artisan crafted, bespoke floral art',
+  authors: [{ name: 'Roselle Team' }],
+  creator: 'Roselle',
+  publisher: 'Roselle',
+  robots: 'index, follow',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://roselle.com',
+    siteName: 'Roselle',
+    title: 'Roselle - Blooming Your World With Love',
+    description: 'Discover Roselle, where love, beauty, and nature meet. Premium floral designs, wedding decor, and personalized mirror art.',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Roselle - Luxury Floral Design',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Roselle - Blooming Your World With Love',
+    description: 'Discover Roselle, where love, beauty, and nature meet. Premium floral designs, wedding decor, and personalized mirror art.',
+    images: ['/og-image.jpg'],
+  },
+  viewport: 'width=device-width, initial-scale=1',
+  themeColor: '#e86b6b',
 }
 
 export default function RootLayout({
